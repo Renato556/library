@@ -63,9 +63,9 @@ class _MyHomePageState extends State<MyHomePage> {
     if (imc < 18.5) {
       status = "Abaixo do peso - IMC:(${imc.toStringAsFixed(3)})";
     } else if (imc < 24.9) {
-      status = "Peso normal - IMC:(${imc.toStringAsFixed(3)})";
+      status = "Peso ideal - IMC:(${imc.toStringAsFixed(3)})";
     } else if (imc < 29.9) {
-      status = "Pré-obesidade - IMC:(${imc.toStringAsFixed(3)})";
+      status = "Sobrepeso - IMC:(${imc.toStringAsFixed(3)})";
     } else if (imc < 34.9) {
       status = "Obesidade Grau I - IMC:(${imc.toStringAsFixed(3)})";
     } else if (imc < 39.9) {
