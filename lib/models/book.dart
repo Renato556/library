@@ -14,7 +14,7 @@ class Book {
 
   factory Book.fromJson(Map<String, dynamic> json) {
     return Book(
-      title: json['title'] ?? 'No title',
+      title: json['title'],
       authors: (json['author_name'] as List?)?.cast<String>() ?? ['Unknown author'],
       coverId: json['cover_i'],
       firstPublishYear: json['first_publish_year']?.toString(),
@@ -22,8 +22,6 @@ class Book {
   }
 
   String get coverUrl {
-    return coverId != null
-        ? 'https://covers.openlibrary.org/b/id/$coverId-M.jpg'
-        : 'https://openlibrary.org/images/icons/avatar_book-sm.png';
+    return 'https://covers.openlibrary.org/b/id/$coverId-M.jpg';
   }
 }

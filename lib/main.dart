@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Open Library Search',
+      title: 'Open Library Search (Provider)',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: const SearchPage(),
     );
